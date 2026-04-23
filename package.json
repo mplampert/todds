@@ -1,0 +1,1 @@
+{"name":"kroll-shopify-sync","version":"1.0.0","private":true,"dependencies":{"soap":"^1.1.0","node-fetch":"^3.3.2"},"engines":{"node":">=18"}}

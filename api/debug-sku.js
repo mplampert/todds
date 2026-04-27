@@ -1,6 +1,6 @@
 const soap = require('soap');
-const WSDL = 'https://apiv2.krollcorp.com/EBusiness/Kroll.Dealer.EBusiness.svc/Docs?singleWsdl';
-const ENDPOINT = 'https://apiv2.krollcorp.com/EBusiness/Kroll.Dealer.EBusiness.svc/Basic';
+const WSDL = 'https://api.krollcorp.com/EBusiness/Kroll.Dealer.EBusiness.svc/Docs?singleWsdl';
+const ENDPOINT = 'https://api.krollcorp.com/EBusiness/Kroll.Dealer.EBusiness.svc/Basic';
 
 module.exports = async function handler(req, res) {
   if (req.query.secret !== process.env.CRON_SECRET) return res.status(401).json({ error: 'Unauthorized' });

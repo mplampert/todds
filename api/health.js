@@ -3,3 +3,4 @@ module.exports = async function handler(req, res) {
   const allSet = checks.KROLL_DEALER_ACCOUNT && checks.KROLL_USER_ID && checks.KROLL_PASSWORD && checks.CRON_SECRET;
   return res.status(allSet ? 200 : 503).json({ status: allSet ? 'ready' : 'missing_config', checks });
 };
+// force deploy
